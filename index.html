@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Live.Rock home page</title>
+        <meta name="description" content="Live.Rock is a blog which gives you the rundown of all your favourite gigs">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/bxq7uez.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="loader-overlay">
+            <div class="loader">
+                <div class="loader-logo"></div>
+                <div class="circle pulse"></div>
+            </div>
+        </div>
+        <header>
+            <div class="header-logo-container">
+                <a href="index.html"><img src="images/Logo-version2-inverted-500px.jpg" class="header-logo" alt="Live.Rock Logo which acts as a home button"></a>
+            </div>
+            <div id="navcontainer" class="nav-bar-container">
+                <div class="nav-logo"></div>
+                <div class="navbar">
+                    <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" id="hamburger-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="current">Home</a></li>
+                            <li><a href="allPosts.html">Posts</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-box">
+                        <form class="search-form">
+                            <div class="search-bar">
+                                <input class="search-input" type="text" placeholder="foo fighters" name="Search">
+                                <button class="search-button">Search</button>
+                            </div>
+                            <div class="search-label"><i class="fas fa-search"></i></div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="page-content">
+                <section class="latestPosts">
+                    <div class="grunge-container">
+                        <h1 class="text-mask-white">What's new?</h1>
+                    </div>
+                    <div>
+                        <div class="slideshow-container">
+                            <div class="latest-post-container">
+
+                                <div class="postSlide">
+                                    <div class="latestPostsContainer1"></div>
+                                </div>
+                                <div class="postSlide">
+                                    <div class="latestPostsContainer2"></div>
+                                </div>
+                                <div class="postSlide">
+                                    <div class="latestPostsContainer3"></div>
+                                </div>
+                                <div class="postSlide">
+                                    <div class="latestPostsContainer4"></div>
+                                </div>
+
+                                <div class="arrow-container">
+                                    <div>
+                                        <a class="prevArrow" onclick="nextPost(-1)"><i class="fas fa-chevron-left"></i></a>
+                                    </div>
+                                    <div>
+                                        <a class="nextArrow" onclick="nextPost(1)"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                                <br>
+                            <div class="carousel-page-markers">
+                                <span class="page-marker" onclick="currentPost(1)"></span> 
+                                <span class="page-marker" onclick="currentPost(2)"></span> 
+                                <span class="page-marker" onclick="currentPost(3)"></span> 
+                                <span class="page-marker" onclick="currentPost(4)"></span> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="most-viewed">
+                    <div class="grunge-container">
+                        <h2 class="text-mask-gold">Most viewed</h2>
+                    </div>
+                    <div class="mostViewedContainer">
+                        <div class="mostViewedPosts"></div>
+                    </div>
+                    <div class="button-container">
+                        <button onclick="seeAllPosts()" class="cta-button allPostsButton">View all posts</button>
+                    </div>
+                </section>
+            </div>
+            <div class="search-results">
+                <div class="search-heading"></div>
+            </div>
+
+        </main>
+        
+        <footer>         
+            <div class="white-footer-div"></div>
+            <div class="footer-logo-container">
+                <a href="index.html"><img src="images/Logo-version2-inverted-500px.jpg" class="footer-logo" alt="Live.Rock Logo which acts as a home button"></a>
+            </div>
+            <div class="social-media-container">
+                <p>Follow our social media accounts and subscribe to get more updates</p>
+                <div class="icon-container">
+                    <i class="fab fa-spotify"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </footer>
+            <script src="js/generalScript.js"></script>
+            <script src="js/latestPosts.js"></script>
+            <script src="js/mostViewedPosts.js"></script>
+    </body>
+</html>
