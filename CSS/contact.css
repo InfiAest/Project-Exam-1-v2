@@ -174,11 +174,17 @@ textarea:focus {
   .validation-image {
     height: auto;
   }
+  .form-heading {
+    width: 90%;
+  }
 }
 /*  Desktop screen sizes-------------*/
 @media (min-width: 801px) {
   input,
   textarea {
     width: 90%;
+  }
+  .form-heading {
+    width: 94%;
   }
 }
